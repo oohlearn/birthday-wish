@@ -5,7 +5,7 @@ import datetime as dt
 import smtplib
 
 my_email = "testc1386@gmail.com"
-password = "wxpljviwkfzazslz"
+password = "wxpljviwkfzazsl"
 
 # 1. Update the birthdays.csv
 # birthdays = pandas.read_csv("birthdays.csv").to_dict(orient="records")
