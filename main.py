@@ -8,7 +8,6 @@ my_email = "testc1386@gmail.com"
 password = "wxpljviwkfzazsl"
 
 # 1. Update the birthdays.csv
-# birthdays = pandas.read_csv("birthdays.csv").to_dict(orient="records")
 data = pandas.read_csv("birthdays.csv")
 birthdays_dic = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
 
@@ -31,8 +30,6 @@ if today_tuple in birthdays_dic:
                             msg=f"Subject:Birthday\n\n{words}")
 
 
-# email = birthdays_data.email[birthdays_data.name == "test2"]
-# print(email)
 # 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's actual name from birthdays.csv
 
 
